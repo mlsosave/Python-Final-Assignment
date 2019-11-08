@@ -1,0 +1,18 @@
+##Us the function make_dashboard to make a dashboard, then take a screen shot.
+
+
+
+x = pd.DataFrame(gdp_df,columns=['date'])
+x.head()
+
+gdp_change = pd.DataFrame(gdp_df,columns=['change-current'])
+gdp_change.head()
+
+unemployment = pd.DataFrame(uemploy_df,columns=['unemployment'])
+unemployment.head()
+
+title = "Unemployement stats according to GDP"
+file_name = "index.html"
+
+
+make_dashboard(x=x, gdp_change=gdp_change, unemployment=unemployment, title=title, file_name=file_name)

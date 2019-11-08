@@ -11,7 +11,7 @@ gdp_change.head()
 unemployment = pd.DataFrame(uemploy_df,columns=['unemployment'])
 unemployment.head()
 
-title = "Unemployement stats according to GDP"
+title = "Unemployment According to GDP"
 file_name = "index.html"
 
 

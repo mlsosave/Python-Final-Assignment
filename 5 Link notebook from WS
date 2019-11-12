@@ -1,0 +1,35 @@
+## input the link for your notebook generated from Watson Studio
+## Credentials
+Adding files to IBM Cloud Object Storage with Python
+In the assignment, much of the code will be provided. When you call the function make_dashboard the function will create and save a file index.html; This file contains the dashboard, you must place this file in IBM object storage, you can then view the dashboard via a URL. You will need the variable file_name.
+
+file_name= "index.html"
+
+There is option to view the credentials you have created. Click â€œView Credentials, you will get credentials in the format given below. 
+Copy your Credentials and assign them to the variable credentials given in the notebook in Question 5 #Hidden cell. 
+Format for credentials as follow:
+
+credentials = 
+{
+  "apikey": "1JwHmlaqv-EKjXO6Axk98EKivyZeGRK109jMEbKaaG_M",
+  "cos_hmac_keys": {
+    "access_key_id": "2f1e7c04b60d4ee59791bd60e7f5c5b6",
+    "secret_access_key": "d523a1ae25034bc53faae31c4cfe2210f8eb2a77f7665cd2"
+  },
+  "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+  "iam_apikey_description": "Auto-generated for key 2f1e7c04-b60d-4ee5-9791-bd60e7f5c5b6",
+  "iam_apikey_name": "ServCred1lau",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/c0f9ba65e6fe4a5297966800eda301fb::serviceid:ServiceId-28a3d3c9-ef46-40c4-9afa-e4482e14e019",
+  "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/c0f9ba65e6fe4a5297966800eda301fb:f3271549-87ea-4aa9-b71e-952c1697e653::"
+}
+
+Note: 
+1) While creating a bucket, make sure Resiliency is set to Cross Region and the location is set to us-geo.
+
+2) Bucket name should be same as that you have created in the Object Storage.
+
+3) endpoint url given in the notebook should remain same.
+
+
+
